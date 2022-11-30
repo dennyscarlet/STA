@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#box1 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(13, 0, 128);
+  padding: 50px;
+  margin: 20px;
+  position:static
+}
+#box2 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(128, 0, 0);
+  padding: 50px;
+  margin: 20px;
+  position:static
+}
+#box3 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(124, 0, 128);
+  padding: 50px;
+  margin: 20px;
+  position:static
+}
+#box4 {
+  background-color: rgb(211, 211, 211);
+  width: 300px;
+  border: 15px solid rgb(119, 128, 0);
+  padding: 50px;
+  margin: 20px;
+  position:static
+}
+#box5 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(0, 119, 128);
+  padding: 50px;
+  margin: 20px;
+  position:static
+}
+#box6 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(117, 0, 128);
+  padding: 50px;
+  margin: 20px;
+  position:static
+}
+#box7 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(128, 58, 0);
+  padding: 50px;
+  margin: 20px;
+  position:static
+}
+</style>
+</head>
+<body>
+
+<h2>7 box model </h2>
+
+
+<div id="box1"> <img src="pecora 1.jfif" alt="">  </div>
+<div id="box2">  <img src="pecora 2.jfif" alt=""> </div>
+<div id="box3">  <img src="pecora 3.jfif" alt="">  </div>
+<div id="box4">  <img src="pecora 4.jfif" alt=""> </div>
+<div id="box5">  <img src="pecora 5.jfif" alt="">  </div>
+<div id="box6">  <img src="pecora 6.jfif" alt="">  </div>
+<div id="box7">  <img src="pecora 7.jfif" alt=""> </div>
+
+
+</body>
+</html>
+
+
+
