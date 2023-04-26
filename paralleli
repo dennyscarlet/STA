@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Calcolare i dati con la legge di ohm su circuiti serie e parallelo</title>
+<style>
+.container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+.results {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #000;
+  background-color: #ccc;
+  display: none;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <form action="">
+    <label>Voltaggio:</label><input type="number" name="voltaggio" />
+    <label>Resistenza:</label><input type="number" name="resistenza" />
+    <select name="tipoCircuito">
+      <option value="serie">Serie</option>
+      <option value="parallelo">Parallelo</option>
+    </select>
+    <input type="submit" value="Calcola"/>
+  </form>
+</div>
+
+<div class="results">
+  <p>Corrente: <span class="corrente"></span></p>
+  <p>Potenza: <span class="potenza"></span></p>
+</div>
+
+<script>
+// Ottenere i dati dal form
+var form = document.querySelector('form');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  var voltaggio = parseFloat(this.voltaggio.value);
+  var resistenza = parseFloat(this.resistenza.value);
+  var tipoCircuito = this.tipoCircuito.value;
+
+  // Calcolare i dati
+  var corrente = 0;
+  var potenza = 0;
+  switch (tipoCircuito) {
+    case 'serie':
+      corrente = voltaggio / resistenza;
+      potenza = voltaggio * corrente;
+      break;
+    case 'parallelo':
+      corrente = voltaggio / (resistenza * resistenza);
+      potenza = voltaggio * corrente;
+      break;
+  }
+
+  // Mostra i dati
+  var results = document.querySelector('.results');
+  results.querySelector('.corrente').innerHTML = corrente;
+  results.querySelector('.potenza').innerHTML = potenza;
+  results.style.display = 'block';
+});
+</script>
+</body>
+</html>
